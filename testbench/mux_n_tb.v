@@ -10,7 +10,6 @@ module mux_n_tb;
 
     integer errors = 0;
 
-    // Instantiate the Device Under Test (DUT)
     mux_n #(.N(N)) dut (
         .a   (a),
         .b   (b),
@@ -24,7 +23,6 @@ module mux_n_tb;
         $dumpvars(0, mux_n_tb);
     end
 
-    // Stimulus
     initial begin
         $display("=========================================================");
         $display(" time |   a(hex) |   b(hex) | sel |   y(hex) | expected | result");
