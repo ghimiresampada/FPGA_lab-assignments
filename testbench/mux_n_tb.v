@@ -17,7 +17,6 @@ module mux_n_tb;
         .y   (y)
     );
 
-    // Dump waveform for GTKWave
     initial begin
         $dumpfile("mux_n_tb.vcd");
         $dumpvars(0, mux_n_tb);
